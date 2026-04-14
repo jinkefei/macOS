@@ -34,17 +34,19 @@
   - `ollama rm <模型名>`
 - https://ollama.com/library
 
-|      |                     |        | Url                                    | Size  | Input       | Context | Bug               |
-| ---- | ------------------- | ------ | -------------------------------------- | ----- | ----------- | ------- | ----------------- |
-| ✅    | qwen3.5:9b          |        | https://ollama.com/library/qwen3.5     | 6.6GB | Text, Image | 256K    |                   |
-|      | qwen3.5:35b         |        |                                        | 24GB  | Text, Image | 256K    |                   |
-| ✅    | deepseek-r1:8b      |        | https://ollama.com/library/deepseek-r1 | 5.2GB | Text        | 128K    |                   |
-|      | deepseek-r1:32b     |        |                                        | 20GB  | Text        | 128K    |                   |
-| ✅    | gemma4:e2b          |        | https://ollama.com/library/gemma4      | 7.2GB | Text, Image | 128K    |                   |
-|      | gemma4:31b          |        |                                        | 20GB  | Text, Image | 128K    |                   |
-| ✅    | x/flux2-klein:4b    | 文生图 | https://ollama.com/x/flux2-klein       | 5.7GB | Text        | -       | 可运行版本 0.20.0 |
-|      | x/flux2-klein:9b    | 文生图 |                                        | 12GB  | Text        | -       |                   |
-|      | x/z-image-turbo:fp8 | 文生图 | https://ollama.com/x/z-image-turbo     | 13GB  | Text        | -       |                   |
+|                         |        | Size  | Input       | Context | Bug               |
+| ----------------------- | ------ | ----- | ----------- | ------- | ----------------- |
+| qwen3.5:9b              |        | 6.6GB | Text, Image | 256K    |                   |
+| qwen3.5:35b             |        | 24GB  | Text, Image | 256K    |                   |
+| qwen3-coder-next:q4_K_M |        | 52GB  | Text        | 256K    |                   |
+| deepseek-r1:8b          |        | 5.2GB | Text        | 128K    |                   |
+| deepseek-r1:32b         |        | 20GB  | Text        | 128K    |                   |
+| deepseek-r1:70b         |        | 43GB  | Text        | 128K    |                   |
+| gemma4:e2b              |        | 7.2GB | Text, Image | 128K    |                   |
+| gemma4:31b              |        | 20GB  | Text, Image | 128K    |                   |
+| x/flux2-klein:4b        | 文生图 | 5.7GB | Text        | -       | 可运行版本 0.20.0 |
+| x/flux2-klein:9b        | 文生图 | 12GB  | Text        | -       |                   |
+| x/z-image-turbo:fp8     | 文生图 | 13GB  | Text        | -       |                   |
 
 ## vscode
 
