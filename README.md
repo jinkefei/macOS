@@ -10,9 +10,12 @@
 - 终端：`xcode-select --install`
   - 苹果官方命令行开发者工具(一个包含 `git`, `clang`, `make` 等的工具包)
   - 比完整的 Xcode 小很多
+- 修改终端主机名
+  - `sudo scutil --set HostName 你想要的名字`
 
 
-### chrome
+
+## chrome
 
 - https://www.google.cn/chrome/index.html
 
@@ -34,19 +37,17 @@
   - `ollama rm <模型名>`
 - https://ollama.com/library
 
-|                         |        | Size  | Input       | Context | Bug               |
-| ----------------------- | ------ | ----- | ----------- | ------- | ----------------- |
-| qwen3.5:9b              |        | 6.6GB | Text, Image | 256K    |                   |
-| qwen3.5:35b             |        | 24GB  | Text, Image | 256K    |                   |
-| qwen3-coder-next:q4_K_M |        | 52GB  | Text        | 256K    |                   |
-| deepseek-r1:8b          |        | 5.2GB | Text        | 128K    |                   |
-| deepseek-r1:32b         |        | 20GB  | Text        | 128K    |                   |
-| deepseek-r1:70b         |        | 43GB  | Text        | 128K    |                   |
-| gemma4:e2b              |        | 7.2GB | Text, Image | 128K    |                   |
-| gemma4:31b              |        | 20GB  | Text, Image | 128K    |                   |
-| x/flux2-klein:4b        | 文生图 | 5.7GB | Text        | -       | 可运行版本 0.20.0 |
-| x/flux2-klein:9b        | 文生图 | 12GB  | Text        | -       |                   |
-| x/z-image-turbo:fp8     | 文生图 | 13GB  | Text        | -       |                   |
+|      | Models              | Size  | Input       | Context | Annotation |
+| ---- | ------------------- | ----- | ----------- | ------- | ---------- |
+| ✅    | qwen3.6:35b         | 24GB  | Text, Image | 256K    |            |
+|      | qwen3.5:9b          | 6.6GB | Text, Image | 256K    |            |
+|      | qwen3.5:35b         | 24GB  | Text, Image | 256K    |            |
+|      | deepseek-r1:8b      | 5.2GB | Text        | 128K    |            |
+| ✅    | deepseek-r1:32b     | 20GB  | Text        | 128K    |            |
+|      | gemma4:e2b          | 7.2GB | Text, Image | 128K    |            |
+| ✅    | gemma4:31b          | 20GB  | Text, Image | 128K    |            |
+| ✅    | x/flux2-klein:9b    | 12GB  | Text        | -       | 文生图     |
+| ✅    | x/z-image-turbo:fp8 | 13GB  | Text        | -       | 文生图     |
 
 ## vscode
 
@@ -64,8 +65,10 @@
 
   - 创建 nvm 目录：`mkdir -p ~/.nvm`
 
-  - 配置环境变量
+  - 创建 .zshrc 文件 ：`touch ~/.zshrc`
 
+  - 配置环境变量，写入 .zshrc
+  
     - ```bash
       export NVM_DIR="$HOME/.nvm"
       [ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"
@@ -73,20 +76,20 @@
       ```
 
   - 使配置生效：`source ~/.zshrc`
-
+  
   - 验证安装：`nvm --version`
 
 ## nvm
 
 ```bash
-# 安装 Node.js 的最新 LTS（长期支持）版本
-nvm install --lts
+# 国内镜像加速（淘宝镜像）
+export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node
 
 # 查看当前使用的 Node.js 版本
 nvm current
 
-# 国内镜像加速（淘宝镜像）
-export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node
+# 安装 Node.js 的最新 LTS（长期支持）版本
+nvm install --lts
 ```
 
 把镜像配置添加到 `~/.zshrc` 中：
@@ -118,4 +121,10 @@ source ~/.zshrc
 - 启动 Claude Code：进入你的项目目录，然后运行 `claude` 命令即可启动
 - 方舟 Coding Plan
   - https://www.volcengine.com/docs/82379/1928262?lang=zh#77277ce0
+
+## 百度翻译
+
+- https://fanyi.baidu.com/appdownload/download.html
+- 截图翻译快捷键：
+  - `shift` ➕ `option` ➕ `a`
 
