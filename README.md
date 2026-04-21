@@ -119,7 +119,10 @@ source ~/.zshrc
 - 验证安装
   - `claude --version`
 - 启动 Claude Code：进入你的项目目录，然后运行 `claude` 命令即可启动
-- 方舟 Coding Plan
+- 使用本地
+  - `ollama launch claude --model gemma4:31b`
+
+- 配置方舟 Coding Plan
   - https://www.volcengine.com/docs/82379/1928262?lang=zh#77277ce0
 
 ## 百度翻译
