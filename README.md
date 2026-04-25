@@ -12,7 +12,8 @@
   - 比完整的 Xcode 小很多
 - 修改终端主机名
   - `sudo scutil --set HostName 你想要的名字`
-
+- 查看系统信息
+  - 按住 `Option` 建不放，点击左上角苹果图标，菜单中会出现“系统信息”
 
 
 ## chrome
@@ -37,17 +38,16 @@
   - `ollama rm <模型名>`
 - https://ollama.com/library
 
-|      | Models              | Size  | Input       | Context | Annotation |
-| ---- | ------------------- | ----- | ----------- | ------- | ---------- |
-| ✅    | qwen3.6:35b         | 24GB  | Text, Image | 256K    |            |
-|      | qwen3.5:9b          | 6.6GB | Text, Image | 256K    |            |
-|      | qwen3.5:35b         | 24GB  | Text, Image | 256K    |            |
-|      | deepseek-r1:8b      | 5.2GB | Text        | 128K    |            |
-| ✅    | deepseek-r1:32b     | 20GB  | Text        | 128K    |            |
-|      | gemma4:e2b          | 7.2GB | Text, Image | 128K    |            |
-| ✅    | gemma4:31b          | 20GB  | Text, Image | 128K    |            |
-| ✅    | x/flux2-klein:9b    | 12GB  | Text        | -       | 文生图     |
-| ✅    | x/z-image-turbo:fp8 | 13GB  | Text        | -       | 文生图     |
+|      | Models                       | Size  | Input       | Context | Annotation |
+| ---- | ---------------------------- | ----- | ----------- | ------- | ---------- |
+| ✅    | qwen3.6:35b                  | 24GB  | Text, Image | 256K    |            |
+| ✅    | qwen3.6:35b-a3b-coding-nvfp4 | 22GB  | Text        | 256K    |            |
+|      | deepseek-r1:8b               | 5.2GB | Text        | 128K    |            |
+| ✅    | deepseek-r1:32b              | 20GB  | Text        | 128K    |            |
+|      | gemma4:e2b                   | 7.2GB | Text, Image | 128K    |            |
+| ✅    | gemma4:31b                   | 20GB  | Text, Image | 128K    |            |
+| ✅    | x/flux2-klein:9b             | 12GB  | Text        | -       | 文生图     |
+| ✅    | x/z-image-turbo:fp8          | 13GB  | Text        | -       | 文生图     |
 
 ## vscode
 
@@ -121,13 +121,23 @@ source ~/.zshrc
 - 启动 Claude Code：进入你的项目目录，然后运行 `claude` 命令即可启动
 - 使用本地
   - `ollama launch claude --model gemma4:31b`
-
 - 配置方舟 Coding Plan
   - https://www.volcengine.com/docs/82379/1928262?lang=zh#77277ce0
+  - 获取 api key
+    - https://console.volcengine.com/ark/region:ark+cn-beijing/apikey
 
 ## 百度翻译
 
 - https://fanyi.baidu.com/appdownload/download.html
 - 截图翻译快捷键：
   - `shift` ➕ `option` ➕ `a`
+
+## Bambu Studio
+
+- https://bambulab.com/zh/download/studio
+
+## Blender
+
+- https://www.blender.org/download/
+  - 修改中文：`Edit` -> `Preferences`
 
