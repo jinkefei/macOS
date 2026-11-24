@@ -103,10 +103,6 @@ source ~/.zshrc
 
 - https://github.com/yanue/V2rayU/releases/tag/v4.2.8
 
-## comfyui
-
-- https://comfy.org/zh-cn/download
-
 ## claude-code
 
 - 需要 Node.js 18.0 或更高版本，以及 Git 2.39 或更高版本。
@@ -140,4 +136,8 @@ source ~/.zshrc
 
 - https://www.blender.org/download/
   - 修改中文：`Edit` -> `Preferences`
+
+## comfyui
+
+- https://comfy.org/zh-cn/download
 
